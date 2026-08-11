@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CEC Quick Access</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: transparent;
+      color: #15294b;
+      padding: 28px 20px;
+    }
+
+    .quick-access {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #15294b;
+      margin-bottom: 9px;
+    }
+
+    .gold-line {
+      width: 90px;
+      height: 5px;
+      background: #f4c430;
+      border-radius: 10px;
+      margin: 0 auto 15px;
+    }
+
+    .section-header p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e7e7e7;
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease,
+                  box-shadow 0.25s ease,
+                  border-color 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: #f4c430;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+      border-color: #f4c430;
+    }
+
+    .icon-box {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      background: #fff8dc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px auto 22px;
+    }
+
+    .icon-box svg {
+      width: 46px;
+      height: 46px;
+      stroke: #15294b;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #15294b;
+    }
+
+    .card p {
+      min-height: 68px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5d5d5d;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f4c430;
+      color: #15294b;
+      padding: 11px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      transition: background 0.2s ease,
+                  transform 0.2s ease;
+    }
+
+    .card:hover .button {
+      background: #ffd84a;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 850px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card p {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .section-header h2 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 25px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="quick-access">
+
+    <div class="section-header">
+      <h2>QUICK ACCESS</h2>
+      <div class="gold-line"></div>
+
+      <p>
+        Access frequently used parish submission tools, official catechetical
+        resources, reports, and monitoring pages of the Commission on
+        Evangelization and Catechesis.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <!-- PARISH SUBMISSION PORTAL -->
+      <a
+        class="card"
+        href="https://sites.google.com/view/diocese-of-catarman-commission/parishes"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <div class="icon-box">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 4h16v16H4z"/>
+            <path d="M8 9h8"/>
+            <path d="M8 13h5"/>
+            <path d="M16 16l2 2 3-4"/>
+          </svg>
+        </div>
+
+        <h3>PARISH SUBMISSION PORTAL</h3>
+
+        <p>
+          Locate your parish and access its designated submission folder
+          for catechetical reports and required documents.
+        </p>
+
+        <span class="button">ACCESS PORTAL →</span>
+      </a>
+
+
+      <!-- FORMS & DOWNLOADS -->
+      <a
+        class="card"
+        href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <div class="icon-box">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M6 2h9l4 4v16H6z"/>
+            <path d="M15 2v5h5"/>
+            <path d="M9 12h6"/>
+            <path d="M9 16h6"/>
+            <path d="M12 8v3"/>
+          </svg>
+        </div>
+
+        <h3>FORMS & DOWNLOADS</h3>
+
+        <p>
+          Access official catechetical forms, downloadable documents,
+          online forms, and other ministry resources.
+        </p>
+
+        <span class="button">VIEW RESOURCES →</span>
+      </a>
+
+
+      <!-- REPORTS & TRACKERS -->
+      <a
+        class="card"
+        href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <div class="icon-box">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 20V10"/>
+            <path d="M10 20V4"/>
+            <path d="M16 20v-7"/>
+            <path d="M22 20H2"/>
+            <path d="M4 7l5-3 5 4 6-5"/>
+          </svg>
+        </div>
+
+        <h3>REPORTS & TRACKERS</h3>
+
+        <p>
+          View diocesan catechetical reports, submission monitoring,
+          trackers, and consolidated situation reports.
+        </p>
+
+        <span class="button">VIEW REPORTS →</span>
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
