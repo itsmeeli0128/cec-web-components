@@ -93,8 +93,7 @@
       border-radius: 16px;
       box-shadow: 0 5px 16px rgba(0, 0, 0, 0.07);
       text-align: center;
-      text-decoration: none;
-      color: inherit;
+      color: #142a4c;
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
@@ -150,14 +149,14 @@
     }
 
     /* =========================
-       BUTTON
+       CLICKABLE BUTTONS
        ========================= */
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 42px;
+      min-height: 44px;
       padding: 11px 20px;
       background: #f4bd27;
       border-radius: 8px;
@@ -165,14 +164,22 @@
       font-size: 13px;
       font-weight: 800;
       text-decoration: none;
+      cursor: pointer;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
       transition:
         transform 0.2s ease,
         background 0.2s ease;
     }
 
-    .card:hover .button {
+    .button:hover {
       background: #ffc928;
       transform: translateY(-1px);
+    }
+
+    .button:focus {
+      outline: 3px solid rgba(244, 189, 39, 0.35);
+      outline-offset: 3px;
     }
 
     /* =========================
@@ -239,6 +246,12 @@
       .card p {
         font-size: 13px;
       }
+
+      .button {
+        width: 100%;
+        min-height: 48px;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -249,6 +262,7 @@
 
     <!-- QUICK ACCESS HEADER -->
     <div class="section-header">
+
       <h2>QUICK ACCESS</h2>
 
       <div class="gold-line"></div>
@@ -258,6 +272,7 @@
         resources, reports, and monitoring pages of the Commission on
         Evangelization and Catechesis.
       </p>
+
     </div>
 
 
@@ -268,12 +283,8 @@
       <!-- ==========================================
            CARD 1: PARISH SUBMISSION PORTAL
            ========================================== -->
-      <a
-        class="card"
-        href="https://script.google.com/macros/s/AKfycbxG1oMdpXMc0ur--p_RKSnXAprj19Y1OHvcnxuzdHJzr1fOslvlqM9s__-csDDNwZ5M/exec"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+
+      <div class="card">
 
         <div class="icon-box">
           <svg
@@ -298,22 +309,23 @@
           for catechetical reports and required documents.
         </p>
 
-        <span class="button">
+        <a
+          class="button"
+          href="https://script.google.com/macros/s/AKfycbxG1oMdpXMc0ur--p_RKSnXAprj19Y1OHvcnxuzdHJzr1fOslvlqM9s__-csDDNwZ5M/exec"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           ACCESS PORTAL →
-        </span>
+        </a>
 
-      </a>
+      </div>
 
 
       <!-- ==========================================
            CARD 2: FORMS & DOWNLOADS
            ========================================== -->
-      <a
-        class="card"
-        href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+
+      <div class="card">
 
         <div class="icon-box">
           <svg
@@ -339,22 +351,23 @@
           online forms, and other ministry resources.
         </p>
 
-        <span class="button">
+        <a
+          class="button"
+          href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           VIEW RESOURCES →
-        </span>
+        </a>
 
-      </a>
+      </div>
 
 
       <!-- ==========================================
            CARD 3: REPORTS & TRACKERS
            ========================================== -->
-      <a
-        class="card"
-        href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+
+      <div class="card">
 
         <div class="icon-box">
           <svg
@@ -380,14 +393,20 @@
           trackers, and consolidated situation reports.
         </p>
 
-        <span class="button">
+        <a
+          class="button"
+          href="https://sites.google.com/view/diocese-of-catarman-commission/resources"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           VIEW REPORTS →
-        </span>
+        </a>
 
-      </a>
+      </div>
 
 
     </div>
+
   </section>
 
 </body>
